@@ -3,6 +3,7 @@ import { EllipsisVertical, ShoppingCart, ShoppingCartIcon, UserIcon } from "luci
 import { Button } from '@/components/ui/button'
 import ModeToggle from "./mode-toggle";
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "../../sheet";
+import UserButton from "./user-button";
 
 const Menu = () => {
 return ( <div className="flex justify-end gap-3">
@@ -13,11 +14,12 @@ return ( <div className="flex justify-end gap-3">
             <ShoppingCart /> Cart
             </Link>
         </Button>
-        <Button asChild>
+        {/* <Button asChild>
             <Link href='/sign-in'>
             <UserIcon /> Sign In
             </Link>
-        </Button>
+        </Button> */}
+        <UserButton />
     </nav>
     <nav className="md:hidden">
         <Sheet>
@@ -34,11 +36,7 @@ return ( <div className="flex justify-end gap-3">
                     <ShoppingCartIcon /> Cart
                     </Link>
                 </Button>
-                <Button asChild>
-            <Link href='/sign-in'>
-            <UserIcon /> Sign In
-            </Link>
-        </Button>
+                <UserButton />
                 <SheetDescription>
 
                 </SheetDescription>

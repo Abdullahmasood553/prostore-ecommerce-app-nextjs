@@ -1,7 +1,7 @@
 'use server'
 import { LATEST_PRODUCT_LIMIT } from "../constants";
 import { prisma } from "@/db/prisma";
-import { convertPlainObject } from "../utils";
+import { convertToPlainObject } from "../utils";
 // Get latest products
 export async function getLatestProducts() {
     
@@ -11,7 +11,7 @@ export async function getLatestProducts() {
         orderBy: { createdAt: 'desc' }
     });
 
-    return convertPlainObject(data);
+    return convertToPlainObject(data);
 }
 
 
@@ -21,3 +21,4 @@ export async function getProductBySlug(slug: string) {
         where: { slug: slug}
     });
 }
+
