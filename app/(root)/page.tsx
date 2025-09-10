@@ -1,4 +1,4 @@
-import ProdutList from "@/components/ui/shared/product/product-list";
+import ProdutList from "@/components/shared/product/product-list";
 import { getLatestProducts } from "@/lib/actions/product.actions";
 
 const HomePage = async () => {

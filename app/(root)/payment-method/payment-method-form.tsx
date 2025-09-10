@@ -43,8 +43,7 @@ const PaymentMethodForm = ({
       const res = await updateUserPaymentMethod(values);
 
       if (!res.success) {
-        toast.error(res.message, {       
-        });
+        toast.error(res.message);
         return;
       }
 

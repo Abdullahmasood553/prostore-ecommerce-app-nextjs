@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuContent,
 DropdownMenuCheckboxItem } from
-"../../dropdown-menu";
+"../../ui/dropdown-menu";
 import { SunIcon, MoonIcon, SunMoon } from 'lucide-react'
 
 const ModeToggle = () => {
